@@ -3,6 +3,8 @@ package com.example.sergio.myapplication;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 public class NovaActivity extends AppCompatActivity {
@@ -26,5 +28,12 @@ public class NovaActivity extends AppCompatActivity {
         }
 
 
+    }
+
+
+    public void onClick2(View v){
+        Intent it =new Intent(this, MainActivity.class);
+        startActivity(it);
+        Log.i("Tela2", "onCLick");
     }
 }

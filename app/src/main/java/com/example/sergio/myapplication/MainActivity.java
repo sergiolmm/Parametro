@@ -3,6 +3,7 @@ package com.example.sergio.myapplication;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -11,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Log.i("Aula", "Estou no onCreate");
     }
 
 
@@ -22,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         param.putString("msg","Novo Valor ....");
         it.putExtras(param);
         startActivity(it);
+        Log.i("Aula", "Estou no onClick");
 
     }
 }
